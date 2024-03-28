@@ -1,8 +1,10 @@
 terraform {
   #############################################################
-  ## AFTER RUNNING TERRAFORM APPLY (WITH LOCAL BACKEND)
-  ## YOU WILL UNCOMMENT THIS CODE THEN RERUN TERRAFORM INIT
-  ## TO SWITCH FROM LOCAL BACKEND TO REMOTE AWS BACKEND
+  /* AFTER RUNNING TERRAFORM APPLY (WITH LOCAL BACKEND)
+     YOU WILL UNCOMMENT THIS CODE THEN RERUN TERRAFORM INIT
+     TO SWITCH FROM LOCAL BACKEND TO REMOTE AWS BACKEND
+      S3 bucket used for storage 
+      DynamoDB used for locking */
   #############################################################
   # backend "s3" {
   #   bucket         = "devops-directive-tf-state" # REPLACE WITH YOUR BUCKET NAME
